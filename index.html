@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ideologic · Ideolab, the scientific Python IDE</title>
+<meta name="description" content="Ideolab is a lightweight desktop IDE for scientific computing and data analysis in Python. Cells, breakpoints, a readable workspace and a figures pane. Buy once, no subscription.">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+
+<!-- The product mark (">I" in an outlined square), drawn once and reused -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 64 64">
+    <rect x="4" y="4" width="56" height="56" rx="15" fill="none" stroke="currentColor" stroke-opacity="0.32" stroke-width="2.2"/>
+    <path d="M21 23.5 29.5 32 21 40.5" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M41 22v20M36.5 22h9M36.5 42h9" fill="none" stroke="var(--brand)" stroke-width="4" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ideologic home"><svg aria-hidden="true"><use href="#mark"/></svg>Ideologic</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#principles">Principles</a>
+      <a href="#who">Who it's for</a>
+      <a href="#why">Why <span class="pn">Ideolab</span></a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a class="btn btn-primary btn-small" href="#pricing">Buy <span class="pn">Ideolab</span></a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero: the thesis, then the real application -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow">From Ideologic</p>
+        <h1>A quiet place to <span class="accent">think in Python.</span></h1>
+        <p class="lede"><span class="pn">Ideolab</span> is a lightweight desktop IDE for scientific computing and data analysis. Write in cells, run them or step through them, and watch your variables and figures update as you go. It does that well and very little else.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#pricing">Buy for <span data-price="personal">£29</span></a>
+          <a class="btn btn-quiet" href="#why">See how it works</a>
+        </div>
+        <ul class="facts" aria-label="At a glance">
+          <li>One-time purchase</li>
+          <li>Windows 10 and 11</li>
+          <li>Your own Python 3.9+</li>
+          <li>No account, works offline</li>
+        </ul>
+      </div>
+      <figure class="shot">
+        <picture>
+          <source srcset="assets/app-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="assets/app-light.png" width="1440" height="900"
+               alt="The Ideolab window: a file browser on the left, a Python script split into cells in the editor, the command window below it, and on the right a workspace listing the fitted parameters and a plot of measured and fitted vibration data.">
+        </picture>
+        <figcaption>A damped-oscillator fit, run cell by cell. Every variable it creates is listed in the workspace and the plot lands in the figures pane.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section id="principles">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Principles</p>
+        <h2>Four rules we design every release against.</h2>
+      </div>
+      <div class="principles">
+        <article class="principle">
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c8 0 14-6 14-14C11 5 5 11 5 19z"/><path d="M5 19l7-7"/></svg>
+          <h3>Lightweight</h3>
+          <p>Opens in seconds and stays out of the way. No plugin store, no indexing your whole drive, no background services.</p>
+        </article>
+        <article class="principle">
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="7.5"/><path d="M12 9v4l2.5 2"/><path d="M9.5 3.5h5"/></svg>
+          <h3>Responsive</h3>
+          <p>Your code runs in its own Python process, so the editor never freezes during a long fit or simulation. Interrupt it whenever you like.</p>
+        </article>
+        <article class="principle">
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="9" height="15" rx="1.5"/><rect x="14.5" y="4.5" width="6" height="6.5" rx="1.5"/><rect x="14.5" y="13" width="6" height="6.5" rx="1.5"/></svg>
+          <h3>Your layout</h3>
+          <p>Every pane docks, tabs, floats onto a second monitor or hides. Save a layout for analysis, another for debugging, another for presenting.</p>
+        </article>
+        <article class="principle">
+          <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="M7 15c2-6 4-6 5-3s3 3 5-4"/></svg>
+          <h3>Science first</h3>
+          <p>Built around the loop of load, compute, inspect and plot. Not around web frameworks, build systems or project wizards.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who it's for -->
+  <section id="who">
+    <div class="wrap who">
+      <div class="section-head">
+        <p class="eyebrow">Who it's for</p>
+        <h2>People who use Python to find things out.</h2>
+        <p class="lede">If your work is a script that grows one cell at a time, and the answer is a number, a table or a plot, <span class="pn">Ideolab</span> was made for you.</p>
+      </div>
+      <div>
+        <ul class="people">
+          <li><strong>Researchers</strong><span>Processing experimental data, fitting models, checking a result before it goes in the paper.</span></li>
+          <li><strong>Engineers</strong><span>Test data, signal processing, simulations and the calculations behind a design decision.</span></li>
+          <li><strong>Analysts</strong><span>Exploring tables with pandas, cleaning data and building the figure that explains it.</span></li>
+          <li><strong>Students and teachers</strong><span>Numerical methods and lab work, in a tool that shows what every line did.</span></li>
+        </ul>
+        <p class="not-for">Building web services or large packaged applications? A full-featured software IDE will serve you better, and that's fine.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why <span class="pn">Ideolab</span></p>
+        <h2>The few things it does, done properly.</h2>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Running and debugging are the same thing.</h3>
+          <p>Split a script into cells with <code># %%</code> and run one with Ctrl+Enter, or run the whole file with F5. If there's a breakpoint, execution stops there either way, with that frame's variables in the workspace and the call stack beside it. Step, continue or inspect without switching modes.</p>
+        </div>
+        <div class="panel" aria-label="Editor example">
+          <div class="panel-title"><span>analysis.py</span><span class="mono">cell 2 of 3</span></div>
+<pre><span class="row"><span class="ln">11</span><span class="marker"># %% Fit a damped oscillator</span></span><span class="row in-cell"><span class="ln">12</span><span class="kw">def</span> model(t, a, zeta, f, phi):</span><span class="row in-cell"><span class="ln">13</span>    w = <span class="str">2</span> * np.pi * f</span><span class="row in-cell"><span class="ln">14</span>    <span class="kw">return</span> a * np.exp(-zeta * w * t) * np.cos(w * t + phi)</span><span class="row in-cell"><span class="ln">15</span></span><span class="row in-cell bp"><span class="ln">16</span>params, cov = curve_fit(model, t, x, p0=[<span class="str">5</span>, <span class="str">0.05</span>, <span class="str">2.0</span>, <span class="str">0</span>])</span><span class="row in-cell"><span class="ln">17</span>amp, zeta, freq, phase = params</span><span class="row"><span class="ln">18</span></span><span class="row"><span class="ln">19</span><span class="marker"># %% Plot measured vs fitted</span></span></pre>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>A workspace you can actually read.</h3>
+          <p>Every variable with its type, size and a preview. Double-click a DataFrame or an array to open it as a table, edit a value in place, and watch it refresh after each command. Type a DataFrame's name at the prompt and you get a summary of its columns, not a wall of numbers.</p>
+        </div>
+        <div class="panel console" aria-label="Command window example">
+          <div class="panel-title"><span>Command Window</span><span class="mono">&gt;&gt;</span></div>
+<pre><span class="row"><span class="prompt">&gt;&gt;</span> data</span><span class="row">DataFrame  600 rows x 2 columns</span><span class="row"> </span><span class="row">  column           dtype    non-null  first values</span><span class="row">  time_s           float64       600  0.0, 0.01, 0.02</span><span class="row">  displacement_mm  float64       600  4.968, 4.7971, 4.4107</span><span class="row"> </span><span class="row"><span class="prompt">&gt;&gt;</span> print(f"{freq:.4f} Hz")</span><span class="row">1.8004 Hz</span></pre>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Figures stay where you can see them.</h3>
+          <p>Plots collect in a figures pane at high resolution, with a history you can flip back through, save or copy. When you need to zoom and pan, switch to separate interactive windows with one click.</p>
+        </div>
+        <div class="panel" aria-label="Figures controls">
+          <div class="panel-title"><span>Figures</span><span class="mono">3 in history</span></div>
+          <div class="chips"><span class="chip">Retina-quality output</span><span class="chip">Always fitted to the pane</span><span class="chip">Save · Copy</span><span class="chip">Separate windows <b>on/off</b></span></div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Your Python, your packages.</h3>
+          <p>Point <span class="pn">Ideolab</span> at any interpreter: a conda environment, a virtualenv or a plain system install. Your code runs there, with the packages you already use. The only thing it needs is <code>ipykernel</code>, and the installer can add it for you.</p>
+        </div>
+        <div class="panel" aria-label="Interpreter choices">
+          <div class="panel-title"><span>Python for your code</span><span class="mono">status bar</span></div>
+          <div class="chips"><span class="chip">conda: <b>analysis</b></span><span class="chip">venv: <b>.venv</b></span><span class="chip">Python <b>3.12</b></span><span class="chip">Python <b>3.10</b></span></div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-text">
+          <h3>Help when you want it, quiet when you don't.</h3>
+          <p>Completions appear as you type, including the columns of DataFrames already in your workspace. Function signatures appear when you open a bracket, and Ctrl+click jumps to a definition, even in your own modules.</p>
+        </div>
+        <div class="panel console" aria-label="Completion example">
+          <div class="panel-title"><span>Completion</span><span class="mono">from your live session</span></div>
+<pre><span class="row"><span class="prompt">&gt;&gt;</span> data.di</span><span class="row">       <span class="marker">displacement_mm</span></span><span class="row">       diff</span><span class="row">       div</span></pre>
+        </div>
+      </div>
+
+      <div class="small-print">
+        <span><strong>No account.</strong> Nothing to sign in to.</span>
+        <span><strong>No telemetry.</strong> It never phones home.</span>
+        <span><strong>Light and dark</strong> themes, both designed properly.</span>
+        <span><strong>No admin rights</strong> needed to install.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Pricing</p>
+        <h2>Buy it once. Keep it.</h2>
+        <p class="lede">No subscription and no maintenance fee. Your licence covers every update in the version you buy.</p>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <div class="plan-name">Personal</div>
+          <div class="price"><span data-price="personal">£29</span><small>one-time</small></div>
+          <ul>
+            <li>Students, researchers and personal projects</li>
+            <li>One person, on all of their own computers</li>
+            <li>Every 1.x update included</li>
+          </ul>
+          <a class="btn btn-quiet" data-checkout="personal" href="#buy">Buy Personal</a>
+        </article>
+        <article class="plan featured">
+          <div class="plan-name">Professional</div>
+          <div class="price"><span data-price="professional">£79</span><small>per person, one-time</small></div>
+          <ul>
+            <li>For use at work, by companies of any size</li>
+            <li>One person, on all of their work computers</li>
+            <li>Every 1.x update included</li>
+            <li>Volume pricing from five people</li>
+          </ul>
+          <a class="btn btn-primary" data-checkout="professional" href="#buy">Buy Professional</a>
+        </article>
+        <article class="plan">
+          <div class="plan-name">Academic</div>
+          <div class="price"><span>Ask</span><small>labs and classrooms</small></div>
+          <ul>
+            <li>Licences for a lab, a course or a whole department</li>
+            <li>Teaching use priced per class, not per student</li>
+            <li>Every 1.x update included</li>
+          </ul>
+          <a class="btn btn-quiet" data-contact href="#buy">Get in touch</a>
+        </article>
+      </div>
+      <p class="pricing-note">When a major new version is released, it's a new purchase, with a discount for existing owners. Bug fixes and improvements within your version are always free. VAT or sales tax is added at checkout where it applies. If <span class="pn">Ideolab</span> isn't right for you, ask for a refund within 14 days.</p>
+      <p class="pending">Sales open soon. Checkout links will appear here when they do.</p>
+    </div>
+  </section>
+
+  <!-- Payment and download -->
+  <section id="buy">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Payment and download</p>
+        <h2>From checkout to your first cell in a few minutes.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Pay</h3><p>Secure checkout by card, Apple Pay or Google Pay. You'll get a receipt straight away.</p></li>
+        <li><h3>Download</h3><p>An email arrives with your download link and licence key. You can request a fresh link at any time.</p></li>
+        <li><h3>Install</h3><p>Unzip the folder and run <code>install.bat</code>. It sets everything up for your user account, with no admin rights needed.</p></li>
+      </ol>
+      <dl class="requirements">
+        <div><dt>System</dt><dd>Windows 10 or 11, 64-bit</dd></div>
+        <div><dt>Your Python</dt><dd>3.9 or newer, with <code>ipykernel</code></dd></div>
+        <div><dt>Disk</dt><dd>About 350 MB</dd></div>
+        <div><dt>Account</dt><dd>None needed</dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg aria-hidden="true" style="width:20px;height:20px"><use href="#mark"/></svg>Ideologic</a>
+    <span>© <span id="year">2026</span> Ideologic</span>
+    <a data-contact href="#buy">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
